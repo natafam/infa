@@ -1,0 +1,71 @@
+Wykonaj poniższe zdania z dziedziczenia wielokrotnego w C++ na podstawie diagramów klas.
+Pamiętaj, żeby użyć namespace std.
+
+1. Napisz Aplikację zawierającą implementacje klas zgodnie z poniższym diagramem:
+
+
+Klasa Osoba
+---
+#imie: string
+#nazwisko: string
+#dataUrodzenia: string
+---
++Osoba(imie_:string, nazwisko_:string, dataUrodzenia_:string)
++WypiszInfo(): void
+
+
+Klasa Student
+---
+-rok: int
+-grupa: int
+-nrIndeksu: int
+---
++Student(imie_:string, nazwisko_:string: dataUrodzenia_:string, int:rok_, int:grupa_, int:nrIndeksu_)
++WypiszInfo(): void
+
+
+Klasa Pilkarz
+---
+-pozycja: string
+-klub: string
+-liczbaGoli: int = 0
+---
++Pilkarz(imie_:string, nazwisko_:string: dataUrodzenia_:string, string:pozycja_, string:klub_)
++Wypisz Info(): void
++StrzelGola(): void
+
+
+Student --> Osoba
+Pilkarz --> Osoba
+
+
+2. Pola w klasach nie mają być dostępne dla funkcji nie będących składowymi klas.
+
+3. Metoda WypiszInfo() powinna wypisać na konsoli wartości pól obiektów.
+
+4. Metoda StrzelGola() powinna zwiększyć o 1 wartość pola liczba goli.
+
+5. Rozszerz aplikacje o dodatkowe dwie klasy pochodne PilkarzNozny i PilkarzReczny, które dziedziczą po klasie Pilkarz.
+
+
+Klasa PilkarzReczny
+---
++Pilkarz(imie_:string, nazwisko_:string: dataUrodzenia_:string, string:pozycja_, string:klub_)
++StrzelGola(): void
+
+
+Klasa PilkarzNozny
+---
++Pilkarz(imie_:string, nazwisko_:string: dataUrodzenia_:string, string:pozycja_, string:klub_)
++StrzelGola(): void
+
+
+PilkarzReczny --> Pilkarz
+PilkarzNozny --> Pilkarz
+
+
+6. Metoda StrzelGola() w klasie PilkarzReczny() ma wywołać metodę StrzelGola() z klasy bazowej oraz wypisać na ekranie informację komunikat "Ręczny strzelił".
+
+7. Metoda StrzelGola() w klasie PilkarzNozny() ma wywołać metodę StrzelGola() z klasy bazowej oraz wypisać na ekranie informację komunikat "Nożny strzelił".
+
+8. Napisz funkcję main(), która zaprezentuje działanie klas tzn. stworzy obiekty klas i wywoła metody.
