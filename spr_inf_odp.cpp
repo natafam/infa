@@ -31,7 +31,7 @@ void znajdz_min_max(double Tab[], int liczba_elementow) {
             biezaca_wartosc_max = Tab[idx];
         }
     }
-    cout << "Maksymalna warto滄: " << biezaca_wartosc_max << " Minimalna warto滄: " << biezaca_wartosc_min << endl;
+    cout << "Maksymalna warto艙忙: " << biezaca_wartosc_max << " Minimalna warto艙忙: " << biezaca_wartosc_min << endl;
 }
 
 void scal_tablice(int poczatek, int srodek, int koniec, double Tab[], int liczba_elementow) {
@@ -120,23 +120,23 @@ int main() {
     znajdz_min_max(Tab, liczba_elementow);
 
     cout << "Sortowanie przez scalanie" << endl;
-    cout << "Zbi髍 przed sortowaniem:\n";
+    cout << "Zbi贸r przed sortowaniem:\n";
     for (int idx = 0; idx < liczba_elementow; idx++) {
         cout << Tab[idx] << " ";
     }
     sortuj_przez_scalanie(0, liczba_elementow - 1, Tab, liczba_elementow);
-    cout << "\nZbi髍 po sortowaniu: \n";
+    cout << "\nZbi贸r po sortowaniu: \n";
     for (int idx = 0; idx < liczba_elementow; idx++) {
         cout << Tab[idx] << " ";
     }
 
     cout << "\nSzybkie sortowanie" << endl;
-    cout << "Zbi髍 przed sortowaniem:\n";
+    cout << "Zbi贸r przed sortowaniem:\n";
     for (int idx = 0; idx < liczba_elementow; idx++) {
         cout << Tab[idx] << " ";
     }
     szybkie_sortowanie(Tab, liczba_elementow, 0, liczba_elementow - 1);
-    cout << "\nZbi髍 po sortowaniu: \n";
+    cout << "\nZbi贸r po sortowaniu: \n";
     for (int idx = 0; idx < liczba_elementow; idx++) {
         cout << Tab[idx] << " ";
     }
