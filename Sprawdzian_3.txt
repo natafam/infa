@@ -1,0 +1,5 @@
+Napisz program demonstrujący: 
+1) znajdowanie min max jednocześnie (10 liczb rozdzielonych spacją w wierszu w pliku tekstowym)
+2) sortowanie przez scalanie (10 liczb rozdzielonych przecinkiem w wierszu w pliku tekstowym)
+3) sortowanie szybkie  (10 liczb rozdzielonych średnikiem, po dwie w każdym wierszu w pliku tekstowym)
+UWAGA !!! Trzeba wczytać liczby z pliku txt do zadań i wynik zapisać do pliku
